@@ -1,6 +1,20 @@
-div{
-    display: inline-block;
+i{
+    color: black;
 }
-.teste{
-    background-color: ghostwhite;
+i:hover{
+    color: red;
+}
+
+#botao{
+    border: 0px solid white;
+    background-color: transparent;
+}
+
+#botao:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#form{
+    display: none;
 }
