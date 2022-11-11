@@ -12,6 +12,13 @@
 </head>
 
 <body>
+  <button
+        type="button"
+        class="btn btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="bi bi-arrow-up-circle-fill"></i>
+</button>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Meu Perfil</a>
@@ -43,9 +50,9 @@
         <h3>Estudante do IPVC</h3>
         <h5>Curso de Engenharia de Informatica da ESTG</h5>
         <b>Contactos: </b>
-        <a href="https://github.com/joaom02"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/"><i class="bi bi-linkedin"></i></a>
-        <button onclick="mail()" id="botao"><i class="bi bi-envelope-fill"></i></button>
+        <a href="https://github.com/joaom02"><i class="bi bi-github o"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/"><i class="bi bi-linkedin o"></i></a>
+        <button onclick="mail()" id="botao"><i class="bi bi-envelope-fill o"></i></button>
       </div>
       <div class="col-sm-6">
         <div class="row" id="skills">
@@ -60,7 +67,7 @@
         </div>
         <hr>
         <div class="row" id="lingua">
-          <h3>Liguagens: </h3>
+          <h3>Línguas: </h3>
           <p>Português</p>
           <p>Inglês</p>
         </div>
@@ -79,19 +86,17 @@
         de encontrar na minha conta de GitHub.</p>
     </div>
     <hr>
-    <div class="row text-center">
-      <div id="form">
-        <form action=" ">
-          <label for="idEmail"><b>Email: </b></label>
-          <input type="email" id="idEmail">
-          <div>
-            <label for="idMsg"><b>Msg: </b></label>
-            <textarea id="idMsg"></textarea>
-          </div>
-          <input type="submit" onclick="teste()" value="Enviar">
-          <input type="button" value="Cancelar" onclick="cancela()">
-        </form>
-      </div>
+    <div class="row text-center" id="form">
+      <form action=" ">
+        <label for="idEmail"><b>Email: </b></label>
+        <input type="email" id="idEmail">
+        <div>
+          <label for="idMsg"><b>Msg: </b></label>
+          <textarea id="idMsg"></textarea>
+        </div>
+        <input type="submit" onclick="enviar()" value="Enviar">
+        <input type="button" value="Cancelar" onclick="cancelar()">
+      </form>
     </div>
 
   </div>
