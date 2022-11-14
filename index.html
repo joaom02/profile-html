@@ -11,36 +11,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="p">
+<body class="light">
   <button
         type="button"
-        class="btn btn-lg"
+        class="btn btn-lg light"
         id="btn-back-to-top"
         >
         <i class="bi bi-arrow-up-circle-fill"></i>
 </button>
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p">
-      <a class="navbar-brand p" href="#">Meu Perfil</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light light">
+      <a class="navbar-brand light">Meu Perfil</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list p"></i>
+        <i class="bi bi-list light"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item" >
-            <a class="nav-link p" href="#geral">Geral</a>
+            <a class="nav-link light" href="#geral">Geral</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p" href="#skills">Skills</a>
+            <a class="nav-link light" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p" href="#lingua">Línguas</a>
+            <a class="nav-link light" href="#lingua">Línguas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p" href="#sobreMim">Sobre Mim</a>
+            <a class="nav-link light" href="#sobreMim">Sobre Mim</a>
           </li>
-          <button type="button" class="btn p" onclick="changeColor()">ChangeColor</button>
+          <li class="nav-item">
+            <a class="nav-link light">Dark Mode: 
+              <label class="switch">
+                <input type="checkbox" onclick="changeColor()">
+                <span class="slider round"></span>
+              </label>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -51,9 +58,9 @@
         <h3>Estudante do IPVC</h3>
         <h5>Curso de Engenharia de Informatica da ESTG</h5>
         <b>Contactos: </b>
-        <a href="https://github.com/joaom02" class="o" id="git"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/" class="o" id="link"><i class="bi bi-linkedin"></i></a>
-        <a onclick="mail()" href="#form" class="o" id="botao"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://github.com/joaom02" class="lightI" id="git"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/" class="lightI" id="link"><i class="bi bi-linkedin"></i></a>
+        <a onclick="mail()" href="#form" class="lightI" id="botao"><i class="bi bi-envelope-fill"></i></a>
       </div>
       <div class="col-sm-6">
         <div class="row" id="skills">
@@ -66,7 +73,7 @@
           <p>JavaScript <i class="bi bi-filetype-js"></i></p>
           <p>Base de Dados</p>
         </div>
-        <hr class="lol">
+        <hr class="lightHr">
         <div class="row" id="lingua">
           <h3>Línguas: </h3>
           <p>Português</p>
@@ -74,7 +81,7 @@
         </div>
       </div>
     </div>
-    <hr class="lol">
+    <hr class="lightHr">
     <div class="row" id="sobreMim">
       <h3> Sobre mim:</h3>
       <p>Meu nome é João Pedro Fonte Martins. Nasci no dia 1 de Maio de 2002, ou seja, atualmente tenho 20 anos.
@@ -84,9 +91,9 @@
         ideia.
         Já completei vários trabalhos usando várias das minhas diferentes habilitações, sendo que alguns deles são
         possiveis
-        de encontrar na minha conta de GitHub.</p>
+        de encontrar na minha conta de GitHub, que se encontra no meus contactos.</p>
     </div>
-    <hr class="lol">
+    <hr class="lightHr">
     <div class="row text-center" id="form">
       <form action=" ">
         <label for="idEmail"><b>Email: </b></label>

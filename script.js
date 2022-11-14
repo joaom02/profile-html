@@ -37,17 +37,16 @@ function backToTop() {
 }
 
 function changeColor(){
-  var elementos3 = document.getElementsByClassName("lol");
-  for(var i = 0; i < elementos3.length; i++){
-    elementos3[i].classList.toggle("darkHr");
-  }
-
-  var elementos = document.getElementsByClassName("o");
+  var elementos = document.getElementsByClassName("lightI");
   for(var i = 0; i < elementos.length; i++){
     elementos[i].classList.toggle("darkI");
   }
-  var elementos2 = document.getElementsByClassName("p");
+  var elementos2 = document.getElementsByClassName("light");
   for(var i = 0; i < elementos2.length; i++){
     elementos2[i].classList.toggle("dark");
+  }
+  var elementos3 = document.getElementsByClassName("lightHr");
+  for(var i = 0; i < elementos3.length; i++){
+    elementos3[i].classList.toggle("darkHr");
   }
 }
