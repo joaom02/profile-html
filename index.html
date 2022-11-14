@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="p">
   <button
         type="button"
         class="btn btn-lg"
@@ -20,26 +20,27 @@
         <i class="bi bi-arrow-up-circle-fill"></i>
 </button>
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Meu Perfil</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p">
+      <a class="navbar-brand p" href="#">Meu Perfil</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list p"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#geral">Geral</a>
+          <li class="nav-item" >
+            <a class="nav-link p" href="#geral">Geral</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link p" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#lingua">Línguas</a>
+            <a class="nav-link p" href="#lingua">Línguas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sobreMim">Sobre Mim</a>
+            <a class="nav-link p" href="#sobreMim">Sobre Mim</a>
           </li>
+          <button type="button" class="btn p" onclick="changeColor()">ChangeColor</button>
         </ul>
       </div>
     </nav>
@@ -50,9 +51,9 @@
         <h3>Estudante do IPVC</h3>
         <h5>Curso de Engenharia de Informatica da ESTG</h5>
         <b>Contactos: </b>
-        <a href="https://github.com/joaom02"><i class="bi bi-github o"></i></a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/"><i class="bi bi-linkedin o"></i></a>
-        <a onclick="mail()" href="#form" id="botao"><i class="bi bi-envelope-fill o"></i></a>
+        <a href="https://github.com/joaom02" class="o" id="git"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-martins-08874b1b9/" class="o" id="link"><i class="bi bi-linkedin"></i></a>
+        <a onclick="mail()" href="#form" class="o" id="botao"><i class="bi bi-envelope-fill"></i></a>
       </div>
       <div class="col-sm-6">
         <div class="row" id="skills">
@@ -65,7 +66,7 @@
           <p>JavaScript <i class="bi bi-filetype-js"></i></p>
           <p>Base de Dados</p>
         </div>
-        <hr>
+        <hr class="lol">
         <div class="row" id="lingua">
           <h3>Línguas: </h3>
           <p>Português</p>
@@ -73,7 +74,7 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr class="lol">
     <div class="row" id="sobreMim">
       <h3> Sobre mim:</h3>
       <p>Meu nome é João Pedro Fonte Martins. Nasci no dia 1 de Maio de 2002, ou seja, atualmente tenho 20 anos.
@@ -85,7 +86,7 @@
         possiveis
         de encontrar na minha conta de GitHub.</p>
     </div>
-    <hr>
+    <hr class="lol">
     <div class="row text-center" id="form">
       <form action=" ">
         <label for="idEmail"><b>Email: </b></label>

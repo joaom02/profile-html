@@ -35,3 +35,19 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function changeColor(){
+  var elementos3 = document.getElementsByClassName("lol");
+  for(var i = 0; i < elementos3.length; i++){
+    elementos3[i].classList.toggle("darkHr");
+  }
+
+  var elementos = document.getElementsByClassName("o");
+  for(var i = 0; i < elementos.length; i++){
+    elementos[i].classList.toggle("darkI");
+  }
+  var elementos2 = document.getElementsByClassName("p");
+  for(var i = 0; i < elementos2.length; i++){
+    elementos2[i].classList.toggle("dark");
+  }
+}
