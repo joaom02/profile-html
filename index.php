@@ -71,19 +71,12 @@
       <div class="col-sm-6">
         <div class="row" id="skills">
           <h3>Skills: </h3>
-          <p>Programação em C</p>
-          <p>Programação em C++</p>
-          <p>Programação em Java <i class="bi bi-filetype-java"></i></p>
-          <p>Programação em Python <i class="bi bi-filetype-py"></i></p>
-          <p>HTML <i class="bi bi-filetype-html"></i></p>
-          <p>JavaScript <i class="bi bi-filetype-js"></i></p>
-          <p>Base de Dados</p>
+          <div id="includedContent"></div>
         </div>
         <hr class="lightHr">
         <div class="row" id="lingua">
           <h3>Línguas: </h3>
-          <p>Português</p>
-          <p>Inglês</p>
+          <div id="includedContent2"></div>
         </div>
       </div>
     </div>
@@ -102,8 +95,10 @@
     <hr class="lightHr">
     <div class="row text-center" id="form">
       <form action=" ">
-        <label for="idEmail"><b>Email: </b></label>
-        <input type="email" id="idEmail">
+        <div>
+          <label for="idHead"><b>Header: </b></label>
+          <input type="text" id="idMsg"></textarea>
+        </div>
         <div>
           <label for="idMsg"><b>Msg: </b></label>
           <textarea id="idMsg"></textarea>
@@ -118,5 +113,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+<script> 
+  $(function(){
+    $("#includedContent").load("../CMS/pages/public/readSkill.php"); 
+  });
+
+  $(function(){
+    $("#includedContent2").load("../CMS/pages/public/readlanguage.php"); 
+  });
+</script>
 
 </html>
