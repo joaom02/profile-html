@@ -9,7 +9,6 @@ function cancelar(){
 }
 
 function enviar(){
-    alert(document.getElementById("idHead").value + "\n\n" + document.getElementById("idMsg").value);
     document.getElementById("form").style.display = "none";
     document.getElementById("botao").style.visibility = "visible";
 }
